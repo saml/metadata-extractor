@@ -144,17 +144,18 @@ urchinTracker();
                     <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
                 </configuration>
             </plugin>
+            <!--
             <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.8</version>
                 <configuration>
                     <message>Creating site for ${project.version}</message>
-                    <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
-                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
-                    <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
+                    <noJekyll>true</noJekyll>                             
+                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> 
+                    <branch>refs/heads/mvn-repo</branch>                  
                     <includes><include>**/*</include></includes>
-                    <repositoryName>metadata-extractor</repositoryName>      <!-- github repo name -->
+                    <repositoryName>metadata-extractor</repositoryName>    
                     <repositoryOwner>saml</repositoryOwner>
                 </configuration>
                 <executions>
@@ -166,6 +167,7 @@ urchinTracker();
                     </execution>
                 </executions>
             </plugin>
+            -->
         </plugins>
     </build>
 
